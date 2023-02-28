@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="index.html" />
+    <link href="gru.css" rel="stylesheet" />
+    <title>Gru</title>
+  </head>
+  <body>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="lucy.html">Lucy Wilde</a></li>
+      <li><a href="margo.html">Margo Gru</a></li>
+      <li><a href="edith.html">Edith Gru</a></li>
+      <li><a href="agnes.html">Agnes Gru</a></li>
+      <li><a href="kevin.html">Kevin</a></li>
+      <li><a href="bob.html">Bob</a></li>
+      <li><a href="stuart.html">Stuart</a></li>
+      <li><a href="nefario.html">Dr.Nefario</a></li>
+    </ul>
+    <h1>Felonius Gru</h1>
+    <p>
+      Felonius Gru (or simply Gru) is the son of Marlena Gru and the late Robert
+      Gru, and is the main protagonist of the Despicable Me franchise. He is a
+      former supervillain and is the husband of AVL agent Lucy Wilde. He has
+      three adopted daughters Margo, Edith, and Agnes. Gru is also the leader of
+      the Minions, is friends with Dr. Nefario and is also the twin brother of
+      Dru Gru.
+    </p>
+    <img src="Gru.jpg" alt="Gru" width="200" height="200" />
+
+    <button class="glow-on-hover" onclick="myFunction()">Play Game</button>
+
+    <p></p>
+
+    <div id="myProgress">
+      <div id="myBar"></div>
+    </div>
+
+    <br />
+
+    <script>
+      var i = 0;
+      function myFunction() {
+        if (i == 0) {
+          i = 1;
+          var elem = document.getElementById("myBar");
+          var width = 1;
+          var id = setInterval(frame, 10);
+          function frame() {
+            if (width >= 100) {
+              clearInterval(id);
+              i = 0;
+            } else {
+              width++;
+              elem.style.width = width + "%";
+            }
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
