@@ -4,11 +4,9 @@ ul {
   padding: 0;
   overflow: hidden;
 }
-
 li {
   float: left;
 }
-
 li a {
   display: block;
   padding: 8px;
@@ -126,14 +124,4 @@ p {
   100% {
     background-position: 0 0;
   }
-}
-#myProgress {
-  width: 100%;
-  background-color: skyblue;
-}
-
-#myBar {
-  width: 1%;
-  height: 30px;
-  background-color: plum;
 }

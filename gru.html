@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <link href="index.html" />
-    <link href="gru.css" rel="stylesheet" />
+    <link href="styling/gru.css" rel="stylesheet" />
     <title>Gru</title>
   </head>
-  <>
+  <body>
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="lucy.html">Lucy Wilde</a></li>
@@ -28,36 +28,6 @@
       Dru Gru.
     </p>
     <img src="images/Gru.jpg" alt="Gru" width="200" height="200" />
-
-    <button class="glow-on-hover" onclick="myFunction()">Play Game</button>
-
-    <p></p>
-
-    <div id="myProgress">
-      <div id="myBar"></div>
-    </div>
-
-    <br />
-
-    <script>
-      var i = 0;
-      function myFunction() {
-        if (i == 0) {
-          i = 1;
-          var elem = document.getElementById("myBar");
-          var width = 1;
-          var id = setInterval(frame, 10);
-          function frame() {
-            if (width >= 100) {
-              clearInterval(id);
-              i = 0;
-            } else {
-              width++;
-              elem.style.width = width + "%";
-            }
-          }
-        }
-      }
-    </script>
+    <button onclick="window.location.href='game.html'">Play Game</button>
   </body>
 </html>
