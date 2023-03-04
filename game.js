@@ -113,9 +113,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (optionOneId == optionTwoId) {
       cards[optionOneId].setAttribute("src", "images/blank.jpg");
       cards[optionTwoId].setAttribute("src", "images/blank.jpg");
-      alert("You have clicked the same image!");
     } else if (cardsChosen[0] === cardsChosen[1]) {
-      alert("You found a match");
       cards[optionOneId].setAttribute("src", "images/white.jpg");
       cards[optionTwoId].setAttribute("src", "images/white.jpg");     //add white images if it is a match
       cards[optionOneId].removeEventListener("click", flipCard);
@@ -124,7 +122,7 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
       cards[optionOneId].setAttribute("src", "images/blank.jpg");
       cards[optionTwoId].setAttribute("src", "images/blank.jpg");     //flip the card back
-      alert("Sorry, try again");
+      
     }
     cardsChosen = [];
     cardsChosenId = [];                                               //start the whole process again
